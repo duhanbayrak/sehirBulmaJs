@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #B2B1B9;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header{
+    position: relative;
+    top: 50px;
+    width: 500px;
+    height: 230px;
+    margin:0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #595260;
+   
+}
+.header h1{
+    padding: 4px;
+    border-bottom: 2px solid #C84B31;
+    
+}
+.start{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.start h2{
+    color: #57837B;
+}
+.start button{
+    width: 120px;
+    height: 48px;
+    border-style: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    background: #57837B;
+    cursor: pointer;
+    color: #2C2E43;
+}
+.start button:hover{
+    background-color: #393E46;
+    color: #C84B31;
+}
+.start button:active{
+    background-color: #C84B31;
+    color: #393E46;
+   
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+}
+#counter{
+    font-size: 4rem;
+}
+#trueCounter{
+    
+    position: absolute;;
+    right: 80px;
+    top: 100px;
+    width: 300px;
+    height: 100px;
+    float: right;
+    text-align: center;
+    
+    font-size: 2rem;
+    color: #2C2E43;
+
+}
+.svg-turkiye-haritasi {
+    position: relative;
+    top: 50px;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .svg-turkiye-haritasi svg {
+    width: 100%;
+    height: auto;
+  }
+  .il-isimleri {
+    position: absolute;
+    z-index: 2;
+  }
+  .il-isimleri div {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    display: inline-block;
+    background: #00ADB5;
+    color: #393E46;
+    padding: 8px 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  #svg-turkiye-haritasi path {
+    cursor: pointer;
+    fill:#2C2E43;
+  }
+  #svg-turkiye-haritasi path:hover {
+    fill: #57837B;
+  }
+  
