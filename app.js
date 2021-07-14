@@ -51,6 +51,7 @@ function startGame() {
             if (dogru >= 81) {
                 counter.textContent = "Tebrikler! Bütün Şehirleri Doğru Bildiniz.";
                 element.style.display = "none";
+                city.textContent = ""
             }
             puan = (dogru * 10);
 
