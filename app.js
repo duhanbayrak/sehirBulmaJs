@@ -19,10 +19,12 @@ function changeCity() {
 
 function startGame() {
     
+    element.style.display = "block";
+    
     city.textContent = `${randomArray[index]}`;
     
     var dogru = 0, Puan, remaining = 15;
-    
+
     counter.textContent = remaining;
 
     element.addEventListener("click", (event) => {
