@@ -1,4 +1,3 @@
-
 var startBtn = document.getElementById("startBtn");
 var city = document.getElementById("city");
 const element = document.querySelector("#svg-turkiye-haritasi");
@@ -35,12 +34,12 @@ function startGame() {
 
 
             if (parent.getAttribute("data-iladi") === randomArray[index]) {
-                dogru++;
-                
-                event.target.style.fill = "#57837B";
-                trueScore.innerText = `${dogru}`;
-               
                 changeCity();
+                event.target.style.fill = "#57837B";
+                dogru++;
+                remaining += 2;
+                trueScore.innerText = `${dogru}`;
+                
             }
             else {
                 remaining--;
@@ -51,7 +50,6 @@ function startGame() {
             if (dogru >= 81) {
                 counter.textContent = "Tebrikler! Bütün Şehirleri Doğru Bildiniz.";
                 element.style.display = "none";
-                city.textContent = ""
             }
             puan = (dogru * 10);
 
@@ -63,15 +61,14 @@ function startGame() {
         if (remaining <= 0) {
             counter.innerHTML = "Puan: " + puan;
             dogru = 0;
-            remaining = 0;
+            remaining = 10;
             trueScore.innerText = `${dogru}`;
             startBtn.textContent = "Tekrar Başla";
             element.style.display = "none";
 
             startBtn.onclick = function() {
                 element.style.display = "block";
-                remaining = 15;
-                startGame()
+                remaining = 10;
 
                 mapPath.forEach((el) => {
                     el.attributeStyleMap.clear();
@@ -85,7 +82,6 @@ function startGame() {
         }
     });
 };
-
 
 
 
