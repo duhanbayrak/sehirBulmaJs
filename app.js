@@ -63,14 +63,14 @@ function startGame() {
         if (remaining <= 0) {
             counter.innerHTML = "Puan: " + puan;
             dogru = 0;
-            remaining = 10;
+            remaining = 15;
             trueScore.innerText = `${dogru}`;
             startBtn.textContent = "Tekrar Başla";
             element.style.display = "none";
 
             startBtn.onclick = function() {
                 element.style.display = "block";
-                remaining = 10;
+                remaining = 15;
 
                 mapPath.forEach((el) => {
                     el.attributeStyleMap.clear();
