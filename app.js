@@ -35,12 +35,12 @@ function startGame() {
 
 
             if (parent.getAttribute("data-iladi") === randomArray[index]) {
-                changeCity();
-                event.target.style.fill = "#57837B";
                 dogru++;
                 remaining += 5;
+                event.target.style.fill = "#57837B";
                 trueScore.innerText = `${dogru}`;
                 counter.textContent = remaining;
+                changeCity();
             }
             else {
                 remaining--;
