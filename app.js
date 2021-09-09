@@ -40,7 +40,7 @@ function startGame() {
                 dogru++;
                 remaining += 5;
                 trueScore.innerText = `${dogru}`;
-                
+                counter.textContent = remaining;
             }
             else {
                 remaining--;
