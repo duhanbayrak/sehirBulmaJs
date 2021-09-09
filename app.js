@@ -34,7 +34,7 @@ function startGame() {
             const parent = event.target.parentNode;
 
 
-            if (parent.getAttribute("data-iladi") == randomArray[index]) {
+            if (parent.getAttribute("data-iladi") === randomArray[index]) {
                 dogru++;
                 
                 event.target.style.fill = "#57837B";
