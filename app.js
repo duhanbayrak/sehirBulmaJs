@@ -71,6 +71,7 @@ function startGame() {
             startBtn.onclick = function() {
                 element.style.display = "block";
                 remaining = 15;
+                startGame()
 
                 mapPath.forEach((el) => {
                     el.attributeStyleMap.clear();
