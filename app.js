@@ -38,7 +38,7 @@ function startGame() {
                 changeCity();
                 event.target.style.fill = "#57837B";
                 dogru++;
-                remaining += 2;
+                remaining += 5;
                 trueScore.innerText = `${dogru}`;
                 
             }
@@ -63,7 +63,7 @@ function startGame() {
         if (remaining <= 0) {
             counter.innerHTML = "Puan: " + puan;
             dogru = 0;
-            remaining = 15;
+            remaining = 0;
             trueScore.innerText = `${dogru}`;
             startBtn.textContent = "Tekrar Başla";
             element.style.display = "none";
