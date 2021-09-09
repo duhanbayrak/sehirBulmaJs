@@ -34,12 +34,12 @@ function startGame() {
             const parent = event.target.parentNode;
 
 
-            if (parent.getAttribute("data-iladi") == randomArray[index-1]) {
+            if (parent.getAttribute("data-iladi") == randomArray[index]) {
                 dogru++;
-                remaining++;
+                
                 event.target.style.fill = "#57837B";
                 trueScore.innerText = `${dogru}`;
-                counter.textContent = remaining;
+               
                 changeCity();
             }
             else {
