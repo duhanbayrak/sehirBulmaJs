@@ -39,7 +39,7 @@ function startGame() {
                 remaining += 5;
                 event.target.style.fill = "#57837B";
                 trueScore.innerText = `${dogru}`;
-                counter.textContent = remaining;
+               
                 changeCity();
             }
             else {
